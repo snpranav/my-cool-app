@@ -1,0 +1,1 @@
+This is the demo NextJS project for the [pangea-cli](https://github.com/pangeacyber/pangea-cli)
