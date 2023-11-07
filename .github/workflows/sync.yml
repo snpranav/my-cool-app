@@ -7,7 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: pangeacyber/pangea-github-action-vault@main
-        run: npm install
         with:
           github_token: ${{secrets.SECRET_PAT}}
           pangea_token: ${{secrets.PANGEA_TOKEN}}
