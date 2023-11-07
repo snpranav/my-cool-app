@@ -76,8 +76,8 @@ jobs:
       - name: Static HTML export with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next
         env:    # Load envs from Pangea Vault
-          NEXT_PUBLIC_EMOJI: {{ secrets.NEXT_PUBLIC_EMOJI }}
-          NEXT_PUBLIC_SUPER_SECRET_KEY: {{ secrets.NEXT_PUBLIC_SUPER_SECRET_KEY }}
+          NEXT_PUBLIC_EMOJI: "${{ secrets.NEXT_PUBLIC_EMOJI }}"
+          NEXT_PUBLIC_SUPER_SECRET_KEY: "${{ secrets.NEXT_PUBLIC_SUPER_SECRET_KEY }}"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
